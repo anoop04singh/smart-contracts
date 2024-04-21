@@ -11,8 +11,8 @@ contract auctionContract{
     uint256 public endTime;
 
     //stateVariables
-    address highestBidder;
-    uint256 highestBid;
+    address public highestBidder;
+    uint256 public highestBid;
     mapping(address=>bool) private  bidders; 
     mapping(address=>uint256) public bidderList;
     enum AuctionState{notStarted,running,ended}
